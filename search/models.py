@@ -12,6 +12,12 @@ class Choice(models.Model):
     votes = models.IntegerField(default=0)
 
 
-class Produit(models.Model):
-    nom = models.CharField(max_length=100)
-    ingredient = models.TextField()
+class Product(models.Model):
+    code = models.CharField(max_length=100)
+    product_name = models.CharField(max_length=100)
+    nutrition_grade = models.CharField(max_length=10)
+    categories_tags_en = models.CharField(max_length=100)
+    category = models.CharField(max_length=100)
+    
+
+
